@@ -50,6 +50,8 @@
                         <li class="footer"><a href="cart_view.php">Go to Cart</a></li>
                         </ul>
                     </li>
+                    <li><a href='login.php'>LOGIN</a></li>
+                    <li><a href='signup.php'>SIGNUP</a></li>
                 </ul>
             </div>   
         
