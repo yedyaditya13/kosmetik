@@ -13,7 +13,7 @@
           $row = $stmt->fetch();
           if ($row['numrows'] > 0) {
               if ($row['status']) {
-                  if ($password ===  $row['password']) {
+                  if (password_verify($password, $row['password'])) {
                       if ($row['type']) {
                           $_SESSION['admin'] = $row['id'];
                       }
