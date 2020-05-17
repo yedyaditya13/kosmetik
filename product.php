@@ -1,7 +1,7 @@
 <?php include 'includes/session.php'; ?>
 
 <?php 
-    $pdo = new Database();
+    // $pdo = new Database();
     $conn = $pdo->open();
 
     $slug = $_GET['product'];
