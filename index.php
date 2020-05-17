@@ -54,7 +54,6 @@
                         <h2>Top Seller</h2>
                             <?php 
                                 $month = date('m');
-                                $pdo = new Database();
                                 $conn = $pdo->open();
                                 
 

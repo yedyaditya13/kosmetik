@@ -11,4 +11,9 @@
     // $(document).on('click', '.close', function(){
     //     $('#callout').hide();
     // });
+
+    // Handle callout close
+    // $(document).on('click', '.close', function(){
+    //     $('#callout').hide();
+    // })
 </script>
