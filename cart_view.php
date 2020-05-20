@@ -34,9 +34,38 @@
                     <?php 
                         if (isset($_SESSION['user'])) {
                             echo "
-                                <h5><b>Lakukan Pembayaran Melalui</b></h5>
-                                
-	        				";
+								<h5><b>Lakukan pembayaran via bank berikut</b> & <b>Konfirmasi pembayaran melalui WhatsApp ke nomor berikut : </b>
+								<span><b>08777-111-333</span></b></h5>
+								<br>
+                                <div class='col-md-8' style='margin-top:30px;'>
+									<table style='margin-left: 17%;' align='center' >
+
+									<tr>
+										<td align='center' style='padding-right:40px;'>
+											<img src='images/bni.jpg' width='150px'  >
+											<br><br>032033024
+											<br><b>BNI</b>
+										</td>
+										<td align='center' style='padding-right:40px;'>
+											<img src='images/bca.png' width='150px' >
+											<br><br>2131030193
+											<br><b>BCA</b>
+										</td>
+										<td align='center' style='padding-right:40px;'>
+											<img src='images/mandiri.jpg' width='150px'  >
+											<br><br>2131030193
+											<br><b>Mandiri</b>
+										</td>
+										<td align='center' style='padding-right:40px;'>
+											<img src='images/bri.png' width='150px' >
+											<br><br>23400920320593
+											<br><b>BRI</b>
+										</td>
+									</tr>
+
+									</table>
+								</div>
+								";
                         }
                         else{
 	        				echo "
