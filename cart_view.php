@@ -13,7 +13,7 @@
             <!-- Main content -->
 	        <section class="content">
 	        <div class="row">
-	        	<div class="col-sm-9">
+	        	<div class="col-sm-12">
                 <h1 class="page-header">YOUR CART</h1>
 	        		<div class="box box-solid">
 	        			<div class="box-body">

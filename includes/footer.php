@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <div class="container">
       <div class="pull-right hidden-xs">
-        <b>All rights reserved</b>
+        <b>Web Penjualan Kalung</b>
       </div>
-      <strong>Copyright &copy; 2020 Brought to You By <a href="#">GendhisKalung</a></strong>
+      <strong>2020 - <a href="#">GendhisKalung</a></strong>
     </div>
 </footer>

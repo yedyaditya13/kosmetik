@@ -1,7 +1,7 @@
 <?php include 'includes/session.php' ?>
 <?php include 'includes/header.php' ?>
 
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-yellow layout-top-nav">
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -13,7 +13,7 @@
             <!-- Main Content -->
             <section class="content">
                 <div class="row">
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         <?php
                             if(isset($_SESSION['error'])){
                                 echo "
@@ -51,7 +51,7 @@
                             </a>
                         </div>
                         
-                        <h2>Top Seller</h2>
+                        <h2>Penjualan Teratas</h2>
                             <?php 
                                 $month = date('m');
                                 $conn = $pdo->open();
@@ -91,9 +91,7 @@
 
                             ?>    
                         </div>
-                    <div class="col-sm-3">
-                        <!-- SIDEBAR -->
-                    </div>
+
                 </div>
             </section>
 
