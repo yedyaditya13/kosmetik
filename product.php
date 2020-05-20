@@ -63,7 +63,7 @@
                                                 <span class="input-group-btn">
                                                     <button type="button" id="minus" class="btn btn-default btn-flat btn-lg"><i class="fa fa-minus"></i></button>
                                                 </span>
-                                                <input type="text" name="quantity" id="quantity" class="form-control input-lg" value="1">
+                                                <input type="text" name="quantity" id="quantity" class="form-control input-lg" value="1" style="margin-right: 10px;">
                                                 <span class="input-group-btn">
                                                     <button type="button" id="add" class="btn btn-default btn-flat btn-lg"><i class="fa fa-plus"></i>
                                                     </button>
