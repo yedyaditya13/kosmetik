@@ -88,6 +88,55 @@ function getTotal(){
 	});
 }
 
+$(document).on('click', '.add', function(e){
+		e.preventDefault();
+		var id = $(this).data('id');
+		var qty = $('#qty_'+id).val();
+		qty++;
+		$('#qty_'+id).val(qty);
+		$.ajax({
+			type: 'POST',
+			url: 'cart_update.php',
+			data: {
+				id: id,
+				qty: qty,
+			},
+			dataType: 'json',
+			success: function(response){
+				if(!response.error){
+					getDetails();
+					getCart();
+					getTotal();
+				}
+			}
+		});
+	});
+
+	$(document).on('click', '.minus', function(e){
+		e.preventDefault();
+		var id = $(this).data('id');
+		var qty = $('#qty_'+id).val();
+		if(qty>1){
+			qty--;
+		}
+		$('#qty_'+id).val(qty);
+		$.ajax({
+			type: 'POST',
+			url: 'cart_update.php',
+			data: {
+				id: id,
+				qty: qty,
+			},
+			dataType: 'json',
+			success: function(response){
+				if(!response.error){
+					getDetails();
+					getCart();
+					getTotal();
+				}
+			}
+		});
+	});
 
 </script>
 </body>
