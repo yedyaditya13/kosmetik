@@ -7,6 +7,9 @@
 
 
 <script>
+
+getCart();
+
 $(function() {
     $('#productForm').submit(function(e) {
         e.preventDefault();
@@ -30,13 +33,23 @@ $(function() {
         })
     });
 
-    $(document).on('click', 'close', function() {
+    $(document).on('click', '.close', function() {
         $('#callout').hide();
     });
 });
 
-ee
 
+function getCart() {
+    $.ajax({
+        type: 'POST',
+        url: 'cart_fetch.php',
+        dataType: 'json',
+        success: function(response) {
+            $('#cart_menu').html(response.list);
+            $('.cart_count').html(response.count);
+        }
+    })
+}
 
 
 
