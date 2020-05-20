@@ -28,7 +28,7 @@
     }
     else{
         $stmt = $conn->prepare("UPDATE products SET counter=1, date_view=:now WHERE id=:id");
-        $stmt->execute(['id'->$product['prodid'], 'now'=>$now]);
+        $stmt->execute(['id'=>$product['prodid'], 'now'=>$now]);
     }    
 ?>
 
