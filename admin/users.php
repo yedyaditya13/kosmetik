@@ -145,24 +145,24 @@ $(function(){
 
 });
 
-// function getRow(id){
-//   $.ajax({
-//     type: 'POST',
-//     url: 'users_row.php',
-//     data: {id:id},
-//     dataType: 'json',
-//     success: function(response){
-//       $('.userid').val(response.id);
-//       $('#edit_email').val(response.email);
-//       $('#edit_password').val(response.password);
-//       $('#edit_firstname').val(response.firstname);
-//       $('#edit_lastname').val(response.lastname);
-//       $('#edit_address').val(response.address);
-//       $('#edit_contact').val(response.contact_info);
-//       $('.fullname').html(response.firstname+' '+response.lastname);
-//     }
-//   });
-// }
+function getRow(id){
+  $.ajax({
+    type: 'POST',
+    url: 'users_row.php',
+    data: {id:id},
+    dataType: 'json',
+    success: function(response){
+      $('.userid').val(response.id);
+      $('#edit_email').val(response.email);
+      $('#edit_password').val(response.password);
+      $('#edit_firstname').val(response.firstname);
+      $('#edit_lastname').val(response.lastname);
+      $('#edit_address').val(response.address);
+      $('#edit_contact').val(response.contact_info);
+      $('.fullname').html(response.firstname+' '+response.lastname);
+    }
+  });
+}
 </script>
 </body>
 </html>
